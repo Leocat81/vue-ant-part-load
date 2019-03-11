@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
+// 路由
 import router from './router'
+// 数据存储
 import store from './store'
+// ant ui主题
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 

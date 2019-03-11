@@ -38,7 +38,9 @@
       <a-layout-content
         :style="{ margin: '24px', padding: '24px', background: '#fff', minHeight: '280px' }"
       >
-        <router-view></router-view>
+        <transition name="slide-fade" mode="out-in">
+          <router-view></router-view>
+        </transition>
       </a-layout-content>
     </a-layout>
   </a-layout>
@@ -190,5 +192,17 @@ export default {
   color: #fff;
   font-weight: bold;
   font-size: 24px;
+}
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  transition: all 0.2s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to{
+  transform: translateY(-10px);
+  opacity: 0;
 }
 </style>
