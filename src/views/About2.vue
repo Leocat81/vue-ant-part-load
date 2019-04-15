@@ -12,7 +12,7 @@
             <a-form-item label="SQL">
               <a-textarea></a-textarea>
             </a-form-item>
-            <a-form-item label="参数">
+            <a-form-item label="参数" class="alita-sider-param">
               <a-textarea></a-textarea>
             </a-form-item>
             <a-form-item class="alita-button-group">
@@ -115,5 +115,8 @@ export default {};
 .alita-full .ant-form-item-control-wrapper,
 .alita-full .ant-form-item-control {
   height: 100%;
+}
+.alita-full .ant-form-item.alita-sider-param{
+  height: 20%;
 }
 </style>
